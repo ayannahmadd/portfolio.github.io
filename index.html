@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohd Ayan - Web Developer | Galgotias University</title>
+    <meta name="description" content="Mohd Ayan - B.Tech CSE Galgotias University 2024-2028. Web Development Internships. Noida, UP.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">
+    <style>
+        :root{--primary:#3498db;--secondary:#2ecc71;--dark:#2c3e50;--light:#ecf0f1;--gray:#7f8c8d}
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:'Segoe UI',sans-serif;line-height:1.6;color:var(--dark)}
+        header{background:linear-gradient(135deg,var(--primary)0%,#2980b9 100%);color:#fff;padding:1rem 0;position:fixed;width:100%;top:0;z-index:1000;box-shadow:0 2px 10px rgba(0,0,0,.1)}
+        nav{display:flex;justify-content:space-between;align-items:center;max-width:1200px;margin:0 auto;padding:0 2rem}
+        nav h1{font-size:1.4rem;font-weight:700}
+        .nav-links{display:flex;list-style:none;gap:2rem}
+        .nav-links a{color:#fff;text-decoration:none;font-weight:500;transition:all .3s}
+        .nav-links a:hover{color:#ecf0f1;transform:translateY(-2px)}
+        section{padding:5rem 2rem;max-width:1200px;margin:0 auto}
+        #hero{padding-top:7rem;text-align:center;background:linear-gradient(135deg,#f8f9fa 0%,#e9ecef 100%)}
+        #hero h2{font-size:2.8rem;margin-bottom:1rem;background:linear-gradient(45deg,var(--primary),var(--secondary));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+        #hero .subtitle{font-size:1.3rem;color:var(--gray);margin-bottom:2rem}
+        .btn{display:inline-block;padding:12px 30px;background:linear-gradient(45deg,var(--primary),#2980b9);color:#fff;text-decoration:none;border-radius:50px;font-weight:600;transition:all .3s;box-shadow:0 4px 15px rgba(52,152,219,.3);border:none;cursor:pointer}
+        .btn:hover{transform:translateY(-3px);box-shadow:0 6px 20px rgba(52,152,219,.4)}
+        .btn-secondary{background:0 0;border:2px solid var(--primary);color:var(--primary);margin-left:1rem}
+        .btn-secondary:hover{background:var(--primary);color:#fff}
+        #about{background:#fff}
+        .about-grid{display:grid;grid-template-columns:1fr 2fr;gap:3rem;margin-top:2rem}
+        .skills{background:var(--light);padding:2rem;border-radius:15px}
+        .skills h3{margin-bottom:1rem;color:var(--dark)}
+        .skills ul{list-style:none}
+        .skills li{padding:.5rem 0;font-weight:500}
+        .skills li::before{content:"▹";color:var(--secondary);font-weight:700;margin-right:1rem}
+        #projects{background:#f8f9fa}
+        .projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:2rem;margin-top:3rem}
+        .project-card{background:#fff;padding:2rem;border-radius:20px;box-shadow:0 10px 30px rgba(0,0,0,.1);transition:all .4s;position:relative;overflow:hidden}
+        .project-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--primary),var(--secondary))}
+        .project-card:hover{transform:translateY(-10px);box-shadow:0 20px 40px rgba(0,0,0,.15)}
+        .project-card h3{margin-bottom:1rem;color:var(--dark);font-size:1.4rem}
+        .project-card p{color:var(--gray);margin-bottom:1.5rem}
+        .project-links{display:flex;gap:1rem;flex-wrap:wrap}
+        #contact{text-align:center;background:#fff}
+        .contact-info{display:flex;justify-content:center;gap:3rem;margin:2rem 0;flex-wrap:wrap}
+        .contact-item{text-align:center}
+        .contact-item a{color:var(--primary);text-decoration:none;font-weight:600;font-size:1.1rem}
+        .contact-item a:hover{text-decoration:underline}
+        footer{text-align:center;padding:2rem;background:var(--dark);color:#fff}
+        @media (max-width:768px){.about-grid{grid-template-columns:1fr}.nav-links{display:none}#hero h2{font-size:2.2rem}.contact-info{flex-direction:column;gap:1.5rem}.btn-secondary{margin-left:0;margin-top:1rem}}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Mohd Ayan</h1>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h2>Web Developer</h2>
+        <p class="subtitle">B.Tech CSE | Galgotias University (2024-2028)</p>
+        <p style="font-size:1.1rem;margin-bottom:2rem;color:#5a6c7d">
+            Building modern web apps | <strong>Web Dev & Software Dev Internships</strong><br>
+            📍 <em>Noida, Uttar Pradesh</em>
+        </p>
+        <a href="#projects" class="btn">My Projects</a>
+        <a href="#contact" class="btn btn-secondary">Contact Me</a>
+    </section>
+
+    <section id="about">
+        <h2 style="text-align:center;font-size:2.5rem;margin-bottom:1rem">About Me</h2>
+        <div class="about-grid">
+            <div>
+                <div style="width:100%;height:300px;background:linear-gradient(135deg,var(--primary),var(--secondary));border-radius:15px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.5rem;font-weight:700;box-shadow:0 10px 30px rgba(0,0,0,.2)">
+                    Add Photo
+                </div>
+                <p style="text-align:center;margin-top:1rem;font-size:.9rem;color:var(--gray)">Upload your photo</p>
+            </div>
+            <div>
+                <h3>🎓 Education</h3>
+                <p><strong>B.Tech Computer Science Engineering</strong><br>
+                Galgotias University, Greater Noida<br><strong>2024-2028</strong></p>
+                
+                <h3 style="margin-top:2rem">💻 Skills</h3>
+                <div class="skills">
+                    <ul>
+                        <li>HTML5 • CSS3 • JavaScript</li>
+                        <li>React.js • Node.js</li>
+                        <li>Git • GitHub</li>
+                        <li>Responsive Design</li>
+                        <li>Bootstrap • Tailwind CSS</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 style="text-align:center;font-size:2.5rem;margin-bottom:1rem">Projects</h2>
+        <p style="text-align:center;color:var(--gray);margin-bottom:3rem;font-size:1.1rem">Practical projects for internship applications</p>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>📝 To-Do List App</h3>
+                <p>Full-featured task manager with local storage, drag-drop, dark mode. Pure JavaScript + CSS Grid.</p>
+                <div class="project-links">
+                    <a href="#" class="btn" style="padding:8px 20px;font-size:.9rem">Live Demo</a>
+                    <a href="#" class="btn btn-secondary" style="padding:8px 20px;font-size:.9rem;border:1px solid var(--gray);color:var(--gray)">Code</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>🧮 Calculator</h3>
+                <p>Scientific calculator (20+ functions) with keyboard support, animations. Mobile responsive.</p>
+                <div class="project-links">
+                    <a href="#" class="btn" style="padding:8px 20px;font-size:.9rem">Live Demo</a>
+                    <a href="#" class="btn btn-secondary" style="padding:8px 20px;font-size:.9rem;border:1px solid var(--gray);color:var(--gray)">Code</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>🌤️ [Weather App]</h3>
+                <p>Add your weather app, portfolio, or quiz app here</p>
+                <div class="project-links">
+                    <a href="#" class="btn" style="padding:8px 20px;font-size:.9rem">Live Demo</a>
+                    <a href="#" class="btn btn-secondary" style="padding:8px 20px;font-size:.9rem">Code</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 style="font-size:2.5rem;margin-bottom:1rem">Get In Touch</h2>
+        <p style="color:var(--gray);margin-bottom:3rem;font-size:1.1rem"><strong>Web Development Internships</strong> | Available Now</p>
+        <div class="contact-info">
+            <div class="contact-item">
+                <h4>📧 Email</h4>
+                <a href="mailto:mohdayan@gmail.com">mohdayan@gmail.com</a>
+            </div>
+            <div class="contact-item">
+                <h4>💼 LinkedIn</h4>
+                <a href="#" target="_blank">/in/mohd-ayan</a>
+            </div>
+            <div class="contact-item">
+                <h4>📂 GitHub</h4>
+                <a href="#" target="_blank">github.com/mohdayan</a>
+            </div>
+        </div>
+        <p style="margin-top:3rem;font-size:1rem;color:#5a6c7d;font-weight:500">
+            📍 Noida, Uttar Pradesh | Galgotias University
+        </p>
+    </section>
+
+    <footer>
+        <p>© 2024 Mohd Ayan | B.Tech CSE Galgotias University | Made with HTML/CSS/JS</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{
+            e.preventDefault();
+            document.querySelector(a.getAttribute('href')).scrollIntoView({behavior:'smooth',block:'start'})
+        }));
+    </script>
+</body>
+</html>
